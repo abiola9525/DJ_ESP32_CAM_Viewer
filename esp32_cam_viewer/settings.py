@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ff=jvje2=08$i+d1)98j_0e%yvu@ngho1a8^av^h5i^39ett77
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'dj-esp32-cam-viewer.onrender.com']
 
 
 # Application definition
