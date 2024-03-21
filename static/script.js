@@ -12,6 +12,8 @@ function connectCamera() {
     setInterval(captureScreenshot, 3000);
 }
 
+
+
 function captureScreenshot() {
     // Dummy function for demonstration
     console.log("Capturing screenshot...");

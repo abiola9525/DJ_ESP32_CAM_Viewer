@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ff=jvje2=08$i+d1)98j_0e%yvu@ngho1a8^av^h5i^39ett77
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'dj-esp32-cam-viewer.onrender.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'dj-esp32-cam-viewer.onrender.com', 'localhost', '127.0.0.1:5500']
 
 
 # Application definition
@@ -72,6 +72,21 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'esp32_cam_viewer.wsgi.application'
 
+X_FRAME_OPTIONS = 'ALLOWALL'
+# Add 'http:' to the list of allowed protocols in SECURE_CONTENT_TYPE_NOSNIFF
+SECURE_CONTENT_TYPE_NOSNIFF = {
+    'text/html',
+    'text/plain',
+    'text/css',
+    'application/javascript',
+    'image/png',
+    'image/jpeg',
+    'image/gif',
+    'http:',
+}
+
+# Set SECURE_BROWSER_XSS_FILTER to False to allow loading mixed content
+SECURE_BROWSER_XSS_FILTER = False
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
