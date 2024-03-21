@@ -73,20 +73,20 @@ TEMPLATES = [
 WSGI_APPLICATION = 'esp32_cam_viewer.wsgi.application'
 
 X_FRAME_OPTIONS = 'ALLOWALL'
-# Add 'http:' to the list of allowed protocols in SECURE_CONTENT_TYPE_NOSNIFF
-SECURE_CONTENT_TYPE_NOSNIFF = {
-    'text/html',
-    'text/plain',
-    'text/css',
-    'application/javascript',
-    'image/png',
-    'image/jpeg',
-    'image/gif',
-    'http:',
-}
+# # Add 'http:' to the list of allowed protocols in SECURE_CONTENT_TYPE_NOSNIFF
+# SECURE_CONTENT_TYPE_NOSNIFF = {
+#     'text/html',
+#     'text/plain',
+#     'text/css',
+#     'application/javascript',
+#     'image/png',
+#     'image/jpeg',
+#     'image/gif',
+#     'http:',
+# }
 
-# Set SECURE_BROWSER_XSS_FILTER to False to allow loading mixed content
-SECURE_BROWSER_XSS_FILTER = False
+# # Set SECURE_BROWSER_XSS_FILTER to False to allow loading mixed content
+# SECURE_BROWSER_XSS_FILTER = False
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
